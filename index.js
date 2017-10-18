@@ -5,7 +5,8 @@ function createNestedArr(jumlahRow, jumlahCol) {
 	for (let i = 0; i < jumlahRow; i++ ) {
 		let row = []
 		for (let j = 0; j < jumlahCol; j++) {
-			row.push(alphabet[Math.floor(Math.random() * alphabet.length)])
+			let random = Math.floor(Math.random() * alphabet.length)
+			row.push(alphabet[random])
 		}
 		arr.push(row)
 	}
